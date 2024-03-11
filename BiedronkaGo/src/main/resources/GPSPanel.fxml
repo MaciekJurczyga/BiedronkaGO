@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0"
+            prefWidth="625.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.MyController">
+   <Label layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="148.0" text="Podaj dane GPS">
+      <font>
+         <Font name="System Bold Italic" size="18.0"/>
+      </font>
+   </Label>
+   <Label layoutX="14.0" layoutY="99.0" prefHeight="25.0" prefWidth="148.0" text="Wpisz wartość N ( °, ', '' )"/>
+   <Label layoutX="238.0" layoutY="95.0" prefHeight="25.0" prefWidth="149.0" text="Wpisz wartość E ( °, ', '' )"/>
+   <TextField fx:id="stopnieN" layoutX="14.0" layoutY="124.0" prefHeight="25.0" prefWidth="50.0"/>
+   <TextField fx:id="stopnieE" layoutX="238.0" layoutY="124.0" prefHeight="25.0" prefWidth="50.0"/>
+   <TextField fx:id="minutyN" layoutX="70.0" layoutY="124.0" prefHeight="25.0" prefWidth="50.0"/>
+   <TextField fx:id="sekundyN" layoutX="126.0" layoutY="124.0" prefHeight="25.0" prefWidth="50.0"/>
+   <TextField fx:id="minutyE" layoutX="294.0" layoutY="124.0" prefHeight="25.0" prefWidth="50.0"/>
+   <TextField fx:id="sekundyE" layoutX="350.0" layoutY="124.0" prefHeight="25.0" prefWidth="50.0"/>
+   <Label layoutX="22.0" layoutY="195.0" prefHeight="36.0" prefWidth="367.0" text="Najbliższy sklep:">
+      <font>
+         <Font name="System Bold" size="14.0"/>
+      </font>
+   </Label>
+   <Label fx:id="closestShop" layoutX="22.0" layoutY="252.0" prefHeight="43.0" prefWidth="544.0"
+          text="Tutaj pojawi ulica skleupu"/>
+   <AnchorPane layoutX="14.0" layoutY="161.0" prefHeight="25.0" prefWidth="103.0">
+      <Button fx:id="confirmData" layoutX="-1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0"
+              text="Zatwierdź dane"/>
+   </AnchorPane>
+</AnchorPane>

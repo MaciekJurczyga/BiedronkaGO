@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ShopInfoWindowController">
+
+   <children>
+      <VBox fx:id="vbox2" layoutX="130.0" layoutY="48.0" prefHeight="361.0" prefWidth="670.0">
+         <children>
+            <Label fx:id="cityLabel" prefHeight="50.0" prefWidth="670.0" />
+            <Label fx:id="addressLabel" prefHeight="50.0" prefWidth="670.0" />
+            <Label fx:id="openingHoursLabel" prefHeight="50.0" prefWidth="670.0" />
+            <Label fx:id="gpsLabel" prefHeight="50.0" prefWidth="670.0"/>
+            <Label fx:id="nameOfPromo" prefHeight="50.0" prefWidth="670.0" />
+            <Label fx:id="priceBefore" prefHeight="50.0" prefWidth="670.0"  />
+            <Label fx:id="priceAfter" prefHeight="52.0" prefWidth="670.0" />
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="50.0" prefWidth="800.0" text="Informacje o wybranej Biedronce">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <VBox fx:id="vbox" layoutY="48.0" prefHeight="360.0" prefWidth="130.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="130.0" style="-fx-font-weight: Bold; -fx-background-color: #ff3232; -fx-font-style: italic;" text="Miasto:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="50.0" prefWidth="130.0" style="-fx-font-weight: Bold; -fx-background-color: #ffcccc; -fx-font-style: italic;" text="Adres:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #ff3232;" text="Godziny otwarcia:">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label graphicTextGap="0.0" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #ffcccc;" text="GPS:">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #ff3232;" text="Promocja dnia:">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="50.0" prefWidth="130.0" style="-fx-font-weight: bold; -fx-background-color: #ffcccc; -fx-font-style: italic;" text="Stara cena:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="53.0" prefWidth="130.0" style="-fx-font-weight: bold; -fx-background-color:#ff3232; -fx-font-style: italic;" text="Nowa cena:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+
+   </children>
+</Pane>

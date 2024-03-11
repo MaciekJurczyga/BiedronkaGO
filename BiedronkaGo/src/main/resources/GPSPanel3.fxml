@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MyController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="148.0" text="Podaj dane GPS">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="61.0" prefHeight="25.0" prefWidth="148.0" text="Wpisz wartość N ( °, ', '' )" />
+      <Label layoutX="214.0" layoutY="61.0" prefHeight="25.0" prefWidth="149.0" text="Wpisz wartość E ( °, ', '' )" />
+      <TextField fx:id="stopnieN" layoutX="14.0" layoutY="86.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="stopnieE" layoutX="214.0" layoutY="86.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="minutyN" layoutX="63.0" layoutY="86.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="sekundyN" layoutX="113.0" layoutY="86.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="minutyE" layoutX="264.0" layoutY="86.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="sekundyE" layoutX="314.0" layoutY="86.0" prefHeight="25.0" prefWidth="50.0" />
+      <Label layoutX="13.0" layoutY="142.0" prefHeight="36.0" prefWidth="367.0" text="Najbliższy sklep:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="closestShop" layoutX="13.0" layoutY="178.0" prefHeight="43.0" prefWidth="544.0" text="Tutaj pojawi się ulica sklepu :))" />
+      <AnchorPane layoutX="13.0" layoutY="117.0" prefHeight="25.0" prefWidth="103.0">
+         <children>
+            <Button fx:id="confirmData" layoutX="-1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Zatwierdź dane" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="mapHolder" layoutX="185.0" layoutY="142.0" prefHeight="277.0" prefWidth="435.0" />
+   </children>
+</AnchorPane>
